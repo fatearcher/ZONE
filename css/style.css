@@ -1,0 +1,710 @@
+@charset "UTF-8";
+
+/* 基本設定 */
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", "Noto Sans JP", "A1明朝", "A1 Mincho", serif;
+  color: #121212;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  color: #333;
+  background-color: #121212;
+}
+
+ul {
+  list-style: none;
+  margin-top: -6px;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+li {
+  margin: 0 0 0 30px;
+  font-size: 14px;
+}
+
+li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 3.6em;
+  margin-bottom: 70px;
+  /* text-align: center; */
+}
+
+h4 {
+  color: #fff;
+  font-size: 2.2em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ヘッダー関連 */
+header {
+  padding: 20px 0;
+  margin: auto;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  background-color: #121212b7;
+}
+
+.block {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 2.5vw;
+  z-index: 30;
+}
+
+/* ナビゲーション関連 */
+.m_nav {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+nav {
+  margin: 6px 0 0 auto;
+}
+
+.sp-nav {
+  display: none;
+}
+
+.m_pic_txt {
+  display: none;
+}
+
+/* スライドショー設定 */
+
+.swiper-wrapper .swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-slide > img {
+  width: 100vw;
+}
+
+/* ボックス・コンテナ */
+
+.Box {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.box2 {
+  width: 77vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.txt_box {
+  width: 600px;
+}
+
+.txt_box > p {
+  font-size: 1.2vw;
+}
+
+.h2_pr {
+  width: 77vw;
+  margin: 0 auto;
+}
+
+/* セクション */
+
+.Concept {
+  width: 77vw;
+  /* padding-bottom: 50vh; */
+  background-color: #121212;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.pic_txt_b {
+  width: 77vw;
+  margin: 0 auto 154px auto;
+  text-align: end;
+}
+
+.pic_txt {
+  color: grey;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.Collection {
+  width: 100vw;
+}
+
+.list {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list_h2 > h2 {
+  color: #121212;
+  margin-bottom: 42px;
+}
+
+.list_h2 > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.45em;
+}
+
+.container {
+  width: 90vw;
+}
+
+.box3 {
+  width: 70vw;
+  display: grid;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  margin: 10px auto 0 auto;
+}
+
+.grid1 {
+  width: 30vw;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.grid1 > img {
+  width: 10vw;
+  margin-left: 10vw;
+}
+
+/* ニュース */
+
+.box6 {
+  width: 77vw;
+  display: grid;
+  gap: 0.6vw;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  margin: 0 auto 150px 0;
+}
+
+.grid2 {
+  width: 23.1vw;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
+.grid2 > img {
+  width: 23.1vw;
+}
+
+.st {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 12px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.Collection {
+  padding-bottom: 230px;
+}
+
+.view {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.45em;
+  margin-left: 32vw;
+}
+
+.box4 {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.txt_box2 {
+  width: 70vw;
+}
+
+.txt_box2 > p {
+  font-size: 1.4em;
+}
+
+.m_h2 {
+  text-align: center;
+  margin-bottom: 140px;
+  padding-top: 110px;
+}
+
+.news {
+  width: 77vw;
+  margin: 150px auto 0 auto;
+}
+
+.Designer {
+  width: 100vw;
+  padding-bottom: 20vh;
+  background-color: #121212;
+  margin-top: -1vh;
+  z-index: 50;
+}
+
+.Information {
+  width: 90vw;
+  height: 120vh;
+  margin: 0 auto;
+}
+
+.Information > h2 {
+  color: #121212;
+  padding-top: 110px;
+  margin-bottom: 110px;
+}
+
+.camp {
+  width: 77vw;
+  margin: -180px auto 0 auto;
+}
+
+.border {
+  width: 60vw;
+  height: 200px;
+  border-top: 1px solid;
+  margin-left: 30vw;
+}
+
+.border2 {
+  width: 90vw;
+  height: 200px;
+  border-top: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 160px;
+}
+
+.border > a {
+  font-size: 1.5em;
+}
+
+.fo {
+  font-size: 2em;
+  color: #121212;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* 画像関連 */
+
+img {
+  max-width: 100vw;
+}
+
+.logo {
+  height: 2em;
+}
+
+.m_logo {
+  position: absolute;
+  top: 280px;
+  z-index: 10;
+  background-color: transparent;
+  margin-left: 5vw;
+}
+
+.m_logo > img {
+  width: 30vw;
+}
+
+.about_pic {
+  width: 24vw;
+  /* background-color: #fff; */
+}
+
+.camp_pic {
+  width: 77vw;
+  text-align: center;
+}
+
+/* リスト */
+
+.list2 {
+  width: 77vw;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.list2 > li {
+  border-bottom: 1px solid #333;
+  list-style: none;
+  padding: 10px;
+  width: 60vw;
+}
+.list2 > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.list2 > time {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 40px;
+}
+.list2 > p {
+  display: inline-block;
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+
+.news3 {
+  font-size: 1.6vw;
+}
+
+/* フッター */
+.sns_link {
+  width: 21vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 70px auto;
+}
+
+.sns_link > img {
+  width: 4.8vw;
+}
+
+.footer_logo {
+  height: 3vh;
+  display: block;
+  margin: 0 auto 35px auto;
+}
+
+/* モバイル設定 */
+
+@media screen and (max-width: 900px) {
+  .swiper-wrapper .swiper-slide {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .swiper-slide > img {
+    height: 60vh;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  .box {
+    margin: 0 auto;
+  }
+
+  .news {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .news > h2 {
+    margin-top: 110px;
+  }
+
+  .h2_pr > h2 {
+    margin-top: 110px;
+  }
+
+  .Concept > h2 {
+    margin-top: 70px;
+  }
+
+  .box6 {
+    width: 90vw;
+    display: grid;
+    grid-gap: 5vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+  }
+  .grid2 {
+    width: 42.1vw;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: -15px;
+  }
+
+  .grid2 > img {
+    width: 42.1vw;
+  }
+  .pc-nav {
+    display: none;
+  }
+  .sp-nav {
+    z-index: 100;
+    position: fixed;
+    top: -6px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.2s ease-in-out;
+  }
+  #hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 12px 0 0 auto;
+  }
+  #hamburger span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+  #hamburger::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+  #hamburger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: transparent;
+  }
+
+  .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  .sp-nav li span {
+    font-size: 15px;
+    color: #fff;
+  }
+  .sp-nav li a,
+  .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+  }
+  .sp-nav .close::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  .sp-nav .close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+  .toggle {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .main-visual {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box2 {
+    width: 77vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .about_pic {
+    width: 40vw;
+    margin-bottom: 30px;
+  }
+  .txt_box {
+    width: 77vw;
+    margin: 0 auto;
+  }
+  .txt_box > p {
+    font-size: 2vw;
+  }
+  .m_h2 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+  }
+  .list_h2 {
+    width: 90vw;
+    padding-top: 40px;
+  }
+
+  .list_h2 > a {
+    display: none;
+  }
+  .list {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .box3 {
+    width: 90vw;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .grid1 {
+    width: 40vw;
+    margin: 20px auto 20px;
+    align-items: center;
+  }
+
+  .grid1 > img {
+    width: 14vw;
+    margin-left: 13vw;
+  }
+
+  .pic_txt_b {
+    display: none;
+  }
+  .view {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.45em;
+    margin-left: 10vw;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .swiper-slide > img {
+    height: 50vh;
+  }
+  .box6 {
+    width: 90vw;
+    display: grid;
+    grid-gap: 5vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* background-color: darkgoldenrod; */
+    margin: 0 auto;
+  }
+  .grid2 {
+    width: 80vw;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: -15px;
+  }
+
+  .grid2 > img {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .swiper-slide > img {
+    height: 35vh;
+  }
+  .grid1 {
+    width: 80vw;
+    margin: 20px auto 20px;
+
+    align-items: center;
+  }
+
+  .grid1 > img {
+    width: 25vw;
+    margin-left: 28vw;
+  }
+  .view {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.45em;
+    margin-left: 10vw;
+  }
+  .logo {
+    height: 1rem;
+  }
+  .footer_logo {
+    height: 1.8vh;
+  }
+}
